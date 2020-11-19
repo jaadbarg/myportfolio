@@ -1,11 +1,11 @@
 import React from 'react'
-import Search from '../homeComponents/Search'
+import AutoComplete from '../homeComponents/AutoComplete'
 
 
 export default function Home() {
     return (
         <div>
-            <Search />
+            <AutoComplete />
         </div>
     )
 }
