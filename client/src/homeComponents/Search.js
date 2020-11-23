@@ -42,6 +42,7 @@ export default function Search() {
         />
         <Dropdown props={input} />
         <input
+          className="button is-rounded level-item"
           type="button"
           value="Search"
           onClick={function () {

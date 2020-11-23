@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "bulma/css/bulma.css";
 
 export default function Dropdown({ props }) {
   const [list, setList] = useState([]);
@@ -46,6 +47,7 @@ export default function Dropdown({ props }) {
       items.push(
         valueNotEmpty && (
           <li
+            className="multiple"
             key={index}
             onClick={function () {
               getStock(value);
@@ -65,5 +67,9 @@ export default function Dropdown({ props }) {
     });
   };
 
-  return <div>{list}</div>;
+  return (
+    <div className="select is-multiple">
+      <select>{list}</select>
+    </div>
+  );
 }
